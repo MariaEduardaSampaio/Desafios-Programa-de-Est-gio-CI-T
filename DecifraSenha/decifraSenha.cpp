@@ -24,12 +24,12 @@ int calcula_numero_da_senha(std::vector<std::string> senha) {
     cont_false = cont_true = 0;
   }
     
-  int expoente = 10;
+  int expoente = 9;
   int i = 0;
   while (i != senha_final_codificada.size()){
     resultado += pow(2, expoente) * senha_final_codificada[i];
     expoente--;
     i++;
   }
-  return resultado/2;
+  return resultado;
 }
